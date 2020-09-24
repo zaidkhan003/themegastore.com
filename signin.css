@@ -1,0 +1,88 @@
+body{
+  background-image: url(lap12.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 90%;
+  animation-name: bgcolor;
+  animation-duration: 8s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+h1{
+  text-align: center;
+  font-family: Garamond;
+  color: #333;
+}
+p{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+hr{
+  width: 50%;
+  border-color: black;
+}
+input[type=text],[type=password]{
+  opacity: 0.5;
+  padding: 2px 3px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+ input[type=submit]{
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input:hover{
+  border-style: dotted;
+  border-color: black;
+}
+input:focus {
+  background-color: black;
+  color: white;
+}
+input[type=submit]:hover{
+  background-color: black;
+}
+a{
+  text-decoration: none;
+}
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+@keyframes bgcolor{
+  0% {
+    background-color: grey;
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+div.pos{
+  padding-right: 20px;
+}
