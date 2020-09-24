@@ -123,4 +123,7 @@ a{
 .par:hover{
   font-weight: 600;
 
-}   
+}
+img:hover{
+  box-shadow: 0px 2px 18px 3px black;
+}
