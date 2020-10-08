@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: grey;
+  background-color: #cdcdcd;
 }
 /* Style the header */
 .header {
@@ -26,7 +26,7 @@ animation-iteration-count: 1;
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #232323;
 }
 
 /* Style the topnav links */
@@ -123,4 +123,7 @@ a{
 .par:hover{
   font-weight: 600;
 
+}
+img:hover{
+  box-shadow: 0px 2px 18px 3px black;
 }   
