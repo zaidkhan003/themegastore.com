@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Laptop Charger</title>
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+  <link rel="icon" href="logo.jpg" type="image/icon type">
+</head>
+<body>
+  <div class="header">
+  <h1>-: Lenovo Original Charger for Laptop :-</h1>
+  </div>
+ <hr>
+ <br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="charg1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="charg2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="charg3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<h2><u>Specifications:</u></h2>
+<p id="spec">
+
+*Brand: Lenovo <br>
+*Manufacturer: Lenovo <br>
+*Model: 1HE07AA#ACJ <br>
+*Product Dimensions: 10 x 10 x 10 cm; 82 Grams <br>
+*Item model number: 0A36264 <br>
+*Compatible Devices: Laptops <br>
+*Mounting Hardware: Adapter <br>
+*Number Of Items: 1 <br>
+*Wattage: 65 Watts</p>
+<br>
+<form method="get" action="ch4_checkout.html">
+<button class="button" type="submit"><span>Proceed to checkout </span></button>
+</form>
+</body>
+</html> 
